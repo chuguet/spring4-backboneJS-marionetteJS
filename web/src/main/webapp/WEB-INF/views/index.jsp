@@ -5,7 +5,7 @@
 		<title>Index</title>
 		
 		<script type="text/javascript" src="resources/js/jquery.js"></script>
-		<script type="text/javascript" src="resources/js/undescore.js"></script>
+		<script type="text/javascript" src="resources/js/underscore.js"></script>
 		<script type="text/javascript" src="resources/js/backbone.js"></script>
 		<script type="text/javascript" src="resources/js/dust.js"></script>
 		<script type="text/javascript" src="resources/js/persona.js"></script>
