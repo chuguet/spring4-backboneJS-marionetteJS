@@ -3,14 +3,7 @@
 	<head>
 		<meta charset="utf-8"/>
 		<title>Index</title>
-		
-		<script type="text/javascript" src="resources/js/jquery.js"></script>
-		<script type="text/javascript" src="resources/js/underscore.js"></script>
-		<script type="text/javascript" src="resources/js/backbone.js"></script>
-		<script type="text/javascript" src="resources/js/dust.js"></script>
-		<script type="text/javascript" src="resources/js/persona.js"></script>
-		<script type="text/javascript" src="resources/js/main.js"></script>
-		
+		<script data-main="resources/js/app/app.js" src="resources/js/lib/require.js"></script>
 		<link href="resources/css/style.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
