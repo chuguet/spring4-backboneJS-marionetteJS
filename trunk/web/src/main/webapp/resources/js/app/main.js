@@ -1,8 +1,7 @@
 define(function(require) {
 
-	var $ = require('jquery'), 
-			dust = require('dust'), 
-			Persona = require('../app/persona');
+	var dust = require('dust'), 
+		Persona = require('../app/persona');
 
 	$("#button").click(function() {
 		var name = $("#name").val();
