@@ -1,8 +1,4 @@
-define(function(require) {
-
-	var dust = require('dust'), 
-		Persona = require('../app/persona');
-
+define(['dust', '../app/persona'], function(dust, Persona) {
 	$("#button").click(function() {
 		var name = $("#name").val();
 		var tlf = $("#tlf").val();

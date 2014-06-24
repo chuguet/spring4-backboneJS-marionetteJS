@@ -1,5 +1,4 @@
-define(function(require) {
-	var Backbone = require('backbone');
+define(['backbone'], function(Backbone) {
 	var Persona = Backbone.Model.extend({
 		url : 'post'
 	});
