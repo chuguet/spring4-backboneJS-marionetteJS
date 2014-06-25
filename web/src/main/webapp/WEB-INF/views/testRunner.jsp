@@ -10,5 +10,6 @@
 </head>
 
 <body>
+	<form action="home"><input type="submit" value="Volver"></form>
 </body>
 </html>
