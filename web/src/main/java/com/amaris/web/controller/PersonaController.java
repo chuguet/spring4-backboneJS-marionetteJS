@@ -30,4 +30,9 @@ public class PersonaController {
            return "index";
     }
 
+	@RequestMapping(value = "/test", method = RequestMethod.GET)
+    public String test() {
+           return "testRunner";
+    }
+
 }

@@ -1,5 +1,5 @@
 define([ 'dust', '../app/persona', '../app/calculator' ], function(dust,
-		Persona, Calculator) {
+		Persona, calculator) {
 	$("#button").click(function() {
 		var name = $("#name").val();
 		var tlf = $("#tlf").val();
@@ -33,31 +33,31 @@ define([ 'dust', '../app/persona', '../app/calculator' ], function(dust,
 	$("#suma").click(function() {
 		var a = parseInt($("#v1").val());
 		var b = parseInt($("#v2").val());
-		$("#r").val(Calculator.suma(a,b));
+		$("#r").val(calculator.suma(a,b));
 	});
 	$("#resta").click(function() {
 		var a = parseInt($("#v1").val());
 		var b = parseInt($("#v2").val());
-		$("#r").val(Calculator.resta(a,b));
+		$("#r").val(calculator.resta(a,b));
 	});
 	$("#multiplica").click(function() {
 		var a = parseInt($("#v1").val());
 		var b = parseInt($("#v2").val());
-		$("#r").val(Calculator.multiplica(a,b));
+		$("#r").val(calculator.multiplica(a,b));
 	});
 	$("#divide").click(function() {
 		var a = parseInt($("#v1").val());
 		var b = parseInt($("#v2").val());
-		$("#r").val(Calculator.divide(a,b));
+		$("#r").val(calculator.divide(a,b));
 	});
 	$("#guarda").click(function() {
 		var a = parseInt($("#v1").val());
-		Calculator.guarda(a);
+		calculator.guarda(a);
 	});
 	$("#borra").click(function() {
-		Calculator.borra();
+		calculator.borra();
 	});
 	$("#recupera").click(function() {
-		$("#v2").val(Calculator.recupera());
+		$("#v2").val(calculator.recupera());
 	});
 });

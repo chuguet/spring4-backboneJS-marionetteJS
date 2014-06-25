@@ -57,5 +57,11 @@
 				</div>
 			</fieldset>
 		</section>
+		<section>
+			<fieldset>
+				<legend>Test</legend>
+				<form action="test"><input type="submit" value="HACER TESTS"></form>
+			</fieldset>
+		</section>
 	</body>
 </html>
