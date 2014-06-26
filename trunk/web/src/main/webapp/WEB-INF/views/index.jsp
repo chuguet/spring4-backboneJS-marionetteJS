@@ -61,9 +61,7 @@
 			<fieldset>
 				<legend>Canvas</legend>
 				<canvas id="canvas" width="400" height="200" style="border:1px solid #d3d3d3;">
-					Este texto se muestra para los navegadores no compatibles con canvas.
-					<br>
-					Por favor, utiliza Firefox, Chrome, Safari u Opera.
+					Este texto se muestra para los navegadores no compatibles con canvas. Por favor, utiliza Firefox, Chrome, Safari u Opera.
 				</canvas>
 			</fieldset>
 		</section>
