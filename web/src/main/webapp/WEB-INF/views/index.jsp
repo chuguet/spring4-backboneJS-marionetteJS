@@ -71,5 +71,19 @@
 				<form action="test"><input type="submit" value="HACER TESTS"></form>
 			</fieldset>
 		</section>
+		<section>
+			<fieldset>
+				<legend>Events</legend>
+				<p>Click on any box to see the effect:</p>
+			    <div class="event" id="div1" style="background-color:blue;">
+			       OUTER BOX
+			       <div class="event" id="div2" style="background-color:red;">
+			             INNER BOX
+			      </div> 
+			   </div>
+				<a id="preventDefault" href="http://jquery.com">Prevent Default</a>
+				<div id="log"></div>
+			</fieldset>
+		</section>
 	</body>
 </html>
