@@ -1,5 +1,5 @@
-define([ 'dust', '../app/persona', '../app/calculator' ], function(dust,
-		Persona, calculator) {
+define([ 'dust', '../app/persona', '../app/calculator', '../app/canvas'], 
+		function(dust, Persona, calculator, canvas) {
 	$("#button").click(function() {
 		var name = $("#name").val();
 		var tlf = $("#tlf").val();
@@ -60,4 +60,12 @@ define([ 'dust', '../app/persona', '../app/calculator' ], function(dust,
 	$("#recupera").click(function() {
 		$("#v2").val(calculator.recupera());
 	});
+	
+	canvas.drawLine(0, 0, 200, 200, '#777');
+	canvas.drawLine(200, 0, 0, 200, '#777');
+	canvas.drawLine(200, 0, 200, 200, '#777');
+	canvas.drawLine(200, 0, 400, 200, '#777');
+	canvas.drawLine(200, 200, 400, 0, '#777');
+	canvas.drawCircle(200, 100, 200, 0, 2*Math.PI, '#666666');
+	canvas.drawRectangle(100,50,200,100, '#666666');
 });

@@ -59,6 +59,16 @@
 		</section>
 		<section>
 			<fieldset>
+				<legend>Canvas</legend>
+				<canvas id="canvas" width="400" height="200" style="border:1px solid #d3d3d3;">
+					Este texto se muestra para los navegadores no compatibles con canvas.
+					<br>
+					Por favor, utiliza Firefox, Chrome, Safari u Opera.
+				</canvas>
+			</fieldset>
+		</section>
+		<section>
+			<fieldset>
 				<legend>Test</legend>
 				<form action="test"><input type="submit" value="HACER TESTS"></form>
 			</fieldset>
