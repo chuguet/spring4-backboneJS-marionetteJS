@@ -61,23 +61,35 @@ define([ 'dust', '../app/persona', '../app/calculator', '../app/canvas' ],
 				$("#v2").val(calculator.recupera());
 			});
 
-			canvas.drawLine(0, 0, 200, 200, '#777');
-			canvas.drawLine(200, 0, 0, 200, '#777');
-			canvas.drawLine(200, 0, 200, 200, '#777');
-			canvas.drawLine(200, 0, 400, 200, '#777');
-			canvas.drawLine(200, 200, 400, 0, '#777');
-			canvas.drawCircle(200, 100, 200, 0, 2 * Math.PI, '#666666');
-			canvas.drawRectangle(100, 50, 200, 100, '#666666');
+			/** Canvas estatico */
+			// canvas.drawLine(0, 0, 200, 200, '#777');
+			// canvas.drawLine(200, 0, 0, 200, '#777');
+			// canvas.drawLine(200, 0, 200, 200, '#777');
+			// canvas.drawLine(200, 0, 400, 200, '#777');
+			// canvas.drawLine(200, 200, 400, 0, '#777');
+			// canvas.drawCircle(200, 100, 200, 0, 2 * Math.PI, '#666666');
+			// canvas.drawRectangle(100, 50, 200, 100, '#666666');
 
-			$("#preventDefault").click(function(event) {
-				event.preventDefault();
-				$("<div>").append(
-						"default " + event.type + " prevented")
-						.appendTo("#log");
+			/** Canvas dinamico */
+			canvas.setup();
+			(function animloop(){
+				requestAnimFrame(animloop);
+				color = 'rgb(' + parseInt(Math.random() * 255) + ','
+				+ parseInt(Math.random() * 255) + ','
+				+ parseInt(Math.random() * 255) + ')';
+				canvas.drawFillRectangle(0, 0, canvas.screenSize.width, canvas.screenSize.height, color);
+			})();
+			
+			$("#preventDefault").click(
+					function(event) {
+						event.preventDefault();
+						$("<div>").append(
+								"default " + event.type + " prevented")
+								.appendTo("#log");
+					});
+			$(".event").click(function(event) {
+				alert("This is : " + $(this).text());
+				// Comment the following to see the difference
+				event.stopPropagation();
 			});
-			$(".event").click(function(event){
-		         alert("This is : " + $(this).text());
-		         // Comment the following to see the difference
-		         event.stopPropagation();
-		    });
 		});
